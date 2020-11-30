@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Surefire suite" duration-ms="99535" started-at="2020-11-30T12:21:19Z" finished-at="2020-11-30T12:22:58Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:aspire_auto.configuration.CukesTestRunnerParallel@5034c75a]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Surefire test" duration-ms="99535" started-at="2020-11-30T12:21:19Z" finished-at="2020-11-30T12:22:58Z">
+      <class name="aspire_auto.configuration.CukesTestRunnerParallel">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:aspire_auto.configuration.CukesTestRunnerParallel@5034c75a]" name="setUpClass" is-config="true" duration-ms="207" started-at="2020-11-30T12:21:19Z" finished-at="2020-11-30T12:21:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="before()[pri:0, instance:aspire_auto.configuration.CukesTestRunnerParallel@5034c75a]" name="before" is-config="true" duration-ms="0" started-at="2020-11-30T12:21:19Z" finished-at="2020-11-30T12:21:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="FAIL" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:aspire_auto.configuration.CukesTestRunnerParallel@5034c75a]" name="runScenario" duration-ms="99096" started-at="2020-11-30T12:21:19Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-11-30T12:22:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Registration with role in company is director"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Registration"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for presence of any elements located by By.cssSelector: div[class*='q-date__years-content'] span[class*='q-btn__content'] span (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ADMIN', ip: '192.168.1.23', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_172'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60085}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 0d7734f7e00bfebaa8192237495edd96]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of any elements located by By.cssSelector: div[class*='q-date__years-content'] span[class*='q-btn__content'] span (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ADMIN', ip: '192.168.1.23', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_172'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60085}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 0d7734f7e00bfebaa8192237495edd96
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+at aspire_auto.pages.BasePage.waitElementsToBeExist(BasePage.java:66)
+at aspire_auto.pages.BasePage.getTexts(BasePage.java:71)
+at aspire_auto.pages.PersonalDetailPage.selectYearOfBirth(PersonalDetailPage.java:30)
+at aspire_auto.pages.PersonalDetailPage.chooseDateOfBirth(PersonalDetailPage.java:78)
+at aspire_auto.stepdefs.Pages.PersonalDetailSteps.lambda$new$0(PersonalDetailSteps.java:24)
+at ✽.the user select date of birth as below(file:src/test/resources/features/Registration.feature:17)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:aspire_auto.configuration.CukesTestRunnerParallel@5034c75a]" name="tearDownClass" is-config="true" duration-ms="116" started-at="2020-11-30T12:22:58Z" finished-at="2020-11-30T12:22:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+        <test-method status="PASS" signature="after()[pri:0, instance:aspire_auto.configuration.CukesTestRunnerParallel@5034c75a]" name="after" is-config="true" duration-ms="0" started-at="2020-11-30T12:22:58Z" finished-at="2020-11-30T12:22:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+      </class> <!-- aspire_auto.configuration.CukesTestRunnerParallel -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

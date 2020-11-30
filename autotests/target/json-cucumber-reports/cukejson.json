@@ -1,0 +1,245 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 9130728800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CukesHook.setupCukesBeforeScenarioAndConfigSpringContext()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Registration with role in company is director",
+        "description": "",
+        "id": "registration;registration-with-role-in-company-is-director",
+        "after": [
+          {
+            "result": {
+              "duration": 757772300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CukesHook.cleanUpAfterScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1984739200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "LoginSteps.java:15"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3241744000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user select register link",
+            "match": {
+              "location": "LoginSteps.java:19"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4443374200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the user fill the info to register as below",
+            "match": {
+              "location": "RegisterSteps.java:18"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "roleInCompany",
+                  "registerPersonHeardAbout",
+                  "promoCode"
+                ]
+              },
+              {
+                "cells": [
+                  "Appointed director",
+                  "Others",
+                  "None"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 167340400,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the user stick the privacy checkbox",
+            "match": {
+              "location": "RegisterSteps.java:28"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 304253800,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the user click the \"Continue\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Continue",
+                  "offset": 20
+                }
+              ],
+              "location": "RegisterSteps.java:32"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6414807000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the user fill the phone OTP",
+            "match": {
+              "location": "RegisterSteps.java:36"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4460784000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "the user click the \"Continue\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Continue",
+                  "offset": 20
+                }
+              ],
+              "location": "RegisterSteps.java:32"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 297286500,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "the user choose \"Continue\" button with registered business in Singapore with ACRA",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Continue",
+                  "offset": 17
+                }
+              ],
+              "location": "RegisterSteps.java:40"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2900299800,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "the user choose get started with \"Standard Registration\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Standard Registration",
+                  "offset": 34
+                }
+              ],
+              "location": "RegisterSteps.java:44"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 336941800,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "the user click the \"Get Started\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Get Started",
+                  "offset": 20
+                }
+              ],
+              "location": "RegisterSteps.java:32"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of any elements located by By.cssSelector: div[class*\u003d\u0027q-date__years-content\u0027] span[class*\u003d\u0027q-btn__content\u0027] span (tried for 60 second(s) with 500 milliseconds interval)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027ADMIN\u0027, ip: \u0027192.168.1.23\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_172\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\\Users\\Admin\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60085}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 0d7734f7e00bfebaa8192237495edd96\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\r\n\tat aspire_auto.pages.BasePage.waitElementsToBeExist(BasePage.java:66)\r\n\tat aspire_auto.pages.BasePage.getTexts(BasePage.java:71)\r\n\tat aspire_auto.pages.PersonalDetailPage.selectYearOfBirth(PersonalDetailPage.java:30)\r\n\tat aspire_auto.pages.PersonalDetailPage.chooseDateOfBirth(PersonalDetailPage.java:78)\r\n\tat aspire_auto.stepdefs.Pages.PersonalDetailSteps.lambda$new$0(PersonalDetailSteps.java:24)\r\n\tat ✽.the user select date of birth as below(file:src/test/resources/features/Registration.feature:17)\r\n",
+              "duration": 63487843600,
+              "status": "failed"
+            },
+            "line": 17,
+            "name": "the user select date of birth as below",
+            "match": {
+              "location": "PersonalDetailSteps.java:18"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "year",
+                  "month",
+                  "day"
+                ]
+              },
+              {
+                "cells": [
+                  "1991",
+                  "November",
+                  "21"
+                ]
+              }
+            ],
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@aspire_auto"
+          }
+        ]
+      }
+    ],
+    "name": "Registration",
+    "description": "",
+    "id": "registration",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Registration.feature",
+    "tags": []
+  }
+]

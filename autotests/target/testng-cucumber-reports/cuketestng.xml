@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testng-results failed="1" passed="0" skipped="0" total="1">
+<suite duration-ms="97927" name="cucumber.runtime.formatter.TestNGFormatter">
+<test duration-ms="97927" name="cucumber.runtime.formatter.TestNGFormatter">
+<class name="Registration">
+<test-method duration-ms="97927" finished-at="2020-11-30T19:22:58Z" name="Registration with role in company is director" started-at="2020-11-30T19:22:58Z" status="FAIL">
+<exception class="org.openqa.selenium.TimeoutException">
+<message><![CDATA[Given the user is on the login page.........................................passed
+When the user select register link..........................................passed
+And the user fill the info to register as below.............................passed
+And the user stick the privacy checkbox.....................................passed
+And the user click the "Continue" button....................................passed
+And the user fill the phone OTP.............................................passed
+And the user click the "Continue" button....................................passed
+And the user choose "Continue" button with registered business in Singapore with ACRA.passed
+And the user choose get started with "Standard Registration"................passed
+And the user click the "Get Started" button.................................passed
+When the user select date of birth as below.................................failed
+]]></message>
+<full-stacktrace><![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of any elements located by By.cssSelector: div[class*='q-date__years-content'] span[class*='q-btn__content'] span (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ADMIN', ip: '192.168.1.23', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_172'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60085}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 0d7734f7e00bfebaa8192237495edd96
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at aspire_auto.pages.BasePage.waitElementsToBeExist(BasePage.java:66)
+	at aspire_auto.pages.BasePage.getTexts(BasePage.java:71)
+	at aspire_auto.pages.PersonalDetailPage.selectYearOfBirth(PersonalDetailPage.java:30)
+	at aspire_auto.pages.PersonalDetailPage.chooseDateOfBirth(PersonalDetailPage.java:78)
+	at aspire_auto.stepdefs.Pages.PersonalDetailSteps.lambda$new$0(PersonalDetailSteps.java:24)
+	at ✽.the user select date of birth as below(file:src/test/resources/features/Registration.feature:17)
+]]></full-stacktrace>
+</exception>
+</test-method>
+</class>
+</test>
+</suite>
+</testng-results>

@@ -3,12 +3,12 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>aspire</groupId>
+    <groupId>Aspire</groupId>
     <artifactId>Aspire</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <name>Aspire</name>
-    <url>https://github.com/Alex-Tran-92/Aspire</url>
+    <url>https://github.com/Alex-Tran-92/aspire_auto</url>
     <description>JAVA test framework</description>
 
     <modules>
