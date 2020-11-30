@@ -90,9 +90,4 @@ public class RegisterPage extends BasePage {
             }
         }
     }
-
-    public void chooseGetStartedWith(String optionStartedWith) {
-        By optionStartedWithBtn = objectmap.getLocatorAndFormats("registerPage.getStartedBtn", optionStartedWith);
-        clickElement(optionStartedWithBtn);
-    }
 }

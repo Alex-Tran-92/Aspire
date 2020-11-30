@@ -6,7 +6,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Quotes;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -59,6 +62,11 @@ public class BasePage {
     protected WebElement waitElementToBeClickable(WebElement elm) {
         WebDriverWait wait = new WebDriverWait(world.webDriverFactory.getDriver(), CommonData.DEFAULT_TIMEOUT);
         return wait.until(ExpectedConditions.elementToBeClickable(elm));
+    }
+
+    protected WebElement waitElementToBeExist(By locator) {
+        WebDriverWait wait = new WebDriverWait(world.webDriverFactory.getDriver(), CommonData.DEFAULT_TIMEOUT);
+        return wait.until(ExpectedConditions.presenceOfElementLocated(locator));
     }
 
     protected List<WebElement> waitElementsToBeExist(By locator) {

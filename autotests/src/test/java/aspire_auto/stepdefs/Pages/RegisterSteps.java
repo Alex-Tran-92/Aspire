@@ -36,13 +36,5 @@ public class RegisterSteps extends AbstractSteps implements En {
         When("the user fill the phone OTP", () -> {
             registerPage.fillOTP();
         });
-
-        When("the user choose \"(.*)\" button with registered business in Singapore with ACRA", (String buttonName) -> {
-            registerPage.clickButton(buttonName);
-        });
-
-        When("the user choose get started with \"(.*)\"", (String optionStartedWith) -> {
-            registerPage.chooseGetStartedWith(optionStartedWith);
-        });
     }
 }
